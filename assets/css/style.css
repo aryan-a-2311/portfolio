@@ -1049,6 +1049,7 @@ main {
 }
 
 /* The Project Modal */
+
 .project-modal-container {
   position: fixed;
   top: 0;
@@ -1061,6 +1062,7 @@ main {
   z-index: 1000;
   pointer-events: none;
   visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .project-modal-container.active {
@@ -1079,7 +1081,7 @@ main {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: opacity 0.3s ease;
   z-index: 999;
 }
 
@@ -1389,6 +1391,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 /* Email Modal Styling */
+
 .email-modal-container {
   position: fixed;
   top: 0;
@@ -1401,6 +1404,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   z-index: 1000;
   pointer-events: none;
   visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Add transition for container */
 }
 
 .email-modal-container.active {
@@ -1419,7 +1423,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: opacity 0.3s ease; /* Add transition */
   z-index: 999;
 }
 
@@ -1440,7 +1444,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   width: 90%; /* Responsive width */
   opacity: 0;
   transform: scale(1.1);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Add transition */
   z-index: 1001;
   margin: 20px; /* Margin for smaller screens */
 }
