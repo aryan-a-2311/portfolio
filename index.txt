@@ -1,0 +1,20 @@
+Aryan Agarwal - Personal Portfolio
+
+- Testimonial modal has a close animation. Same for all modals
+
+- Testimonials 
+    - Company Name, Position
+    - Link to LinkedIn
+
+- Responsiveness
+    - Project Page
+    - Project Modals
+    - Clear Button on Contact form
+
+- Carousel
+
+- Download resume button on top
+
+- About Me Page
+
+- Splash Screen Maybe?
