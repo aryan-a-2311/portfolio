@@ -1098,10 +1098,13 @@ main {
   border: 1px solid var(--jet);
   border-radius: 14px;
   box-shadow: var(--shadow-5);
+  max-width: 550px; /* Limit maximum width */
+  width: 90%; /* Responsive width */
   opacity: 0;
   transform: scale(1.1);
   transition: opacity 0.3s ease, transform 0.3s ease;
   z-index: 1001;
+  margin: 0 10px; /* Margin for spacing */
 }
 
 .project-modal-container.active .project-modal-content {
@@ -1123,6 +1126,7 @@ main {
   color: var(--white-2);
   font-size: 18px;
   opacity: 0.7;
+  cursor: pointer;
 }
 
 .project-modal-close-btn:hover,
@@ -1139,7 +1143,7 @@ main {
 .project-modal-img-wrapper > img { display: none; }
 
 .project-modal-title {
-  margin-bottom: 15px; /* More space after title */
+  margin-bottom: 15px;
 }
 
 .project-modal-details time {
@@ -1157,13 +1161,13 @@ main {
 }
 
 #project-modal-description, #project-modal-technologies {
-  margin-bottom: 15px; /* Space between sections */
+  margin-bottom: 15px;
 }
 
 #project-modal-description h5, #project-modal-technologies h5 {
-  color: var(--orange-yellow-crayola); /* Heading color */
-  font-size: var(--fs-4); /* Adjust size as needed */
-  margin-bottom: 5px; /* Space below heading */
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-4);
+  margin-bottom: 5px;
 }
 
 #project-modal-description p, #project-modal-technologies p {

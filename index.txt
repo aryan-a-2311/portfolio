@@ -1,7 +1,5 @@
 Aryan Agarwal - Personal Portfolio
 
-- Width of Project Modals is too much. Limit it while still keeping the whole thing Responsivene
-
 - Testimonials 
     - Company Name, Position
     - Link to LinkedIn
