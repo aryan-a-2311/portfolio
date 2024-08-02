@@ -483,7 +483,63 @@ main {
 
 .about-text p { margin-bottom: 15px; }
 
+/* Download Resume Button */
 
+.about {
+  margin-bottom: 20px; /* Space below section */
+}
+
+.about-description {
+  margin-bottom: 20px; /* Space between description and button */
+}
+
+.download-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 25px;
+  background-color: var(--vegas-gold);
+  color: var(--eerie-black-2);
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 20px; /* Add space above the button */
+}
+
+.download-link:hover {
+  background-color: var(--orange-yellow-crayola);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.download-icon {
+  margin-right: 8px;
+  font-size: 1.5em;
+  color: inherit;
+}
+
+.body-no-scroll {
+  overflow: hidden;
+}
+
+/* Responsiveness of View Resume Button */
+
+@media (max-width: 580px) {
+  .download-link {
+    width: auto;
+    max-width: 90%;
+    padding: 12px 24px;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+}
 
 /**
  * #service 
@@ -1396,6 +1452,22 @@ textarea.form-input::-webkit-resizer { display: none; }
   opacity: 1;
 }
 
+/* Responsiveness of Clear Button */
+
+@media (max-width: 768px) {
+  .clear-btn {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    text-align: center;
+    margin: 15px 0;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+}
+
 /* Email Modal Styling */
 
 .email-modal-container {
@@ -1515,7 +1587,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .project-img,
   .blog-banner-box { height: auto; }
-
 }
 
 
@@ -2144,46 +2215,4 @@ textarea.form-input::-webkit-resizer { display: none; }
 .skills-download {
   text-align: center;
   margin-top: 20px;
-}
-
-/* Download Resume Button */
-
-.about {
-  margin-bottom: 20px; /* Space below section */
-}
-
-.about-description {
-  margin-bottom: 20px; /* Space between description and button */
-}
-
-.download-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 25px;
-  background-color: var(--vegas-gold);
-  color: var(--eerie-black-2);
-  text-decoration: none;
-  border-radius: 12px;
-  font-weight: bold;
-  font-size: 16px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  margin-top: 20px; /* Add space above the button */
-}
-
-.download-link:hover {
-  background-color: var(--orange-yellow-crayola);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
-}
-
-.download-icon {
-  margin-right: 8px;
-  font-size: 1.5em;
-  color: inherit;
-}
-
-.body-no-scroll {
-  overflow: hidden;
 }
