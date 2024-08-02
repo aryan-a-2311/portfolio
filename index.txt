@@ -1,18 +1,21 @@
 Aryan Agarwal - Personal Portfolio
 
+- Download resume button on top
+
+- Add Content to Project Modals
+
+- Add content to Testimonials 
+
 - Testimonials 
     - Company Name, Position
     - Link to LinkedIn
 
 - Responsiveness
     - Project Page
-    - Project Modals
     - Clear Button on Contact form
 
-- Carousel
+- Carousel?
 
-- Download resume button on top
+- About Me Page?
 
-- About Me Page
-
-- Splash Screen Maybe?
+- Splash Screen?

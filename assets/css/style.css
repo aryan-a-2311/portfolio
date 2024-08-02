@@ -1,17 +1,4 @@
 /*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
@@ -111,10 +98,6 @@
 
 }
 
-
-
-
-
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
@@ -156,10 +139,6 @@ input, textarea {
 html { font-family: var(--ff-poppins); }
 
 body { background: var(--smoky-black); }
-
-
-
-
 
 /*-----------------------------------*\
   #REUSED STYLE
@@ -256,8 +235,8 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar {
-  width: 5px; /* for vertical scrollbar */
-  height: 5px; /* for horizontal scrollbar */
+  width: 5px;
+  height: 5px;
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
@@ -293,9 +272,6 @@ article.active {
 }
 
 
-
-
-
 /*-----------------------------------*\
   #MAIN
 \*-----------------------------------*/
@@ -305,10 +281,6 @@ main {
   margin-bottom: 75px;
   min-width: 259px;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #SIDEBAR
@@ -440,28 +412,24 @@ main {
 
 /* LinkedIn */
 .social-item .social-link[href*="linkedin"] {
-  color: var(--light-gray-70); /* Default color */
+  color: var(--light-gray-70);
   transition: color 0.3s ease;
 }
 
 .social-item .social-link[href*="linkedin"]:hover {
-  color: #0077b5; /* LinkedIn blue */
+  color: #0077b5;
 }
 
 
 /* GitHub */
 .social-item .social-link[href*="github"] {
-  color: var(--light-gray-70); /* Default color */
+  color: var(--light-gray-70);
   transition: color 0.3s ease;
 }
 
 .social-item .social-link[href*="github"]:hover {
-  color: #6e5494; /* GitHub black */
+  color: #6e5494;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #NAVBAR
@@ -499,10 +467,6 @@ main {
 .navbar-link:focus { color: var(--light-gray-70); }
 
 .navbar-link.active { color: var(--orange-yellow-crayola); }
-
-
-
-
 
 /*-----------------------------------*\
   #ABOUT
@@ -769,10 +733,6 @@ main {
 
 .clients-item img:hover { filter: grayscale(0); }
 
-
-
-
-
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
@@ -883,8 +843,6 @@ main {
   border-radius: inherit;
 }
 
-
-
 /*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
@@ -949,14 +907,14 @@ main {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Space between items */
+  gap: 20px;
   justify-content: space-between;
 }
 
 .project-item {
-  flex: 1 1 calc(50% - 20px); /* 50% width minus the gap */
-  max-width: calc(50% - 20px); /* Ensure it does not exceed 50% width */
-  box-sizing: border-box; /* Include padding and border in the width */
+  flex: 1 1 calc(50% - 20px);
+  max-width: calc(50% - 20px);
+  box-sizing: border-box;
 }
 
 .project-item.active {
@@ -976,7 +934,6 @@ main {
   width: auto;
   height: 100%;
   border-radius: 16px;
-  /* object-fit: cover; */
   overflow: hidden;
   margin-bottom: 15px;
 }
@@ -1098,13 +1055,13 @@ main {
   border: 1px solid var(--jet);
   border-radius: 14px;
   box-shadow: var(--shadow-5);
-  max-width: 550px; /* Limit maximum width */
-  width: 90%; /* Responsive width */
+  max-width: 550px;
+  width: 90%; 
   opacity: 0;
   transform: scale(1.1);
   transition: opacity 0.3s ease, transform 0.3s ease;
   z-index: 1001;
-  margin: 0 10px; /* Margin for spacing */
+  margin: 0 10px;
 }
 
 .project-modal-container.active .project-modal-content {
@@ -1176,7 +1133,6 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
-
 
 /*-----------------------------------*\
   #BLOG
@@ -1261,10 +1217,6 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #CONTACT
@@ -1373,7 +1325,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .button-group {
   display: flex;
-  gap: 10px; /* Space between buttons */
+  gap: 10px;
 }
 
 .form-btn, .clear-btn {
@@ -1384,14 +1336,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .clear-btn {
-  background-color: #44444466; /* A subtle, darker background */
-  color: #fff; /* White text */
-  opacity: 0.7; /* Slightly lower opacity to make it less prominent */
+  background-color: #44444466;
+  color: #fff;
+  opacity: 0.7;
   transition: opacity 0.3s;
 }
 
 .clear-btn:hover {
-  opacity: 1; /* Full opacity on hover */
+  opacity: 1;
 }
 
 /* Email Modal Styling */
@@ -1408,7 +1360,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   z-index: 1000;
   pointer-events: none;
   visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease; /* Add transition for container */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .email-modal-container.active {
@@ -1427,7 +1379,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.3s ease; /* Add transition */
+  transition: opacity 0.3s ease;
   z-index: 999;
 }
 
@@ -1444,13 +1396,13 @@ textarea.form-input::-webkit-resizer { display: none; }
   border: 1px solid var(--jet);
   border-radius: 14px;
   box-shadow: var(--shadow-5);
-  max-width: 525px; /* Set maximum width */
-  width: 90%; /* Responsive width */
+  max-width: 525px;
+  width: 90%;
   opacity: 0;
   transform: scale(1.1);
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Add transition */
+  transition: opacity 0.3s ease, transform 0.3s ease;
   z-index: 1001;
-  margin: 20px; /* Margin for smaller screens */
+  margin: 20px;
 }
 
 .email-modal-container.active .email-modal-content {
@@ -1472,7 +1424,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: var(--white-2);
   font-size: 18px;
   opacity: 0.7;
-  cursor: pointer; /* Ensure cursor changes to pointer */
+  cursor: pointer;
 }
 
 .email-modal-close-btn:hover,
@@ -1505,7 +1457,6 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .clients-item { min-width: calc(33.33% - 10px); }
-
 
 
   /**
@@ -1546,8 +1497,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     --fs-8: 12px;
 
   }
-
-
 
   /**
    * #REUSED STYLE
@@ -1805,10 +1754,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   .form-btn ion-icon { font-size: 18px; }
 
 }
-
-
-
-
 
 /**
  * responsive larger than 768px screen
@@ -2151,29 +2096,42 @@ textarea.form-input::-webkit-resizer { display: none; }
   margin-top: 20px;
 }
 
+/* Download Resume Button */
+
+.about {
+  margin-bottom: 20px; /* Space below section */
+}
+
+.about-description {
+  margin-bottom: 20px; /* Space between description and button */
+}
+
 .download-link {
   display: inline-flex;
   align-items: center;
-  padding: 10px 20px;
-  background-color: var(--orange-yellow-crayola);
-  color: var(--smoky-black);
+  justify-content: center;
+  padding: 10px 25px;
+  background-color: var(--vegas-gold);
+  color: var(--eerie-black-2);
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 12px;
   font-weight: bold;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 20px; /* Add space above the button */
 }
 
 .download-link:hover {
-  background-color: var(--vegas-gold);
+  background-color: var(--orange-yellow-crayola);
   transform: translateY(-2px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
 
 .download-icon {
-  margin-right: 8px; /* Space between icon and text */
-  font-size: 1.2em; /* Size of the icon */
-  color: inherit; /* Inherit the color from the link */
+  margin-right: 8px;
+  font-size: 1.5em;
+  color: inherit;
 }
 
 .body-no-scroll {

@@ -120,7 +120,7 @@ const projectsData = [
   },
   {
     id: "project3",
-    title: "Employee Management Application using Cognisun",
+    title: "Employee Management Application for Cognisun",
     description:
       "A data analysis project that decodes trends in the smartphone market using big data techniques.",
     technologies: "Python, Pandas, Big Data, Data Visualization",
