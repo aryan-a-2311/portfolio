@@ -1,6 +1,9 @@
 Aryan Agarwal - Personal Portfolio
 
-- Download resume button on top
+- Responsiveness
+    - Clear Button on Contact form
+    - View Resume Icon Responsiveness
+    - Responsiveness on 
 
 - Add Content to Project Modals
 
@@ -9,10 +12,6 @@ Aryan Agarwal - Personal Portfolio
 - Testimonials 
     - Company Name, Position
     - Link to LinkedIn
-
-- Responsiveness
-    - Project Page
-    - Clear Button on Contact form
 
 - Carousel?
 

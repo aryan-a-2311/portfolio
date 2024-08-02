@@ -1134,6 +1134,56 @@ main {
   line-height: 1.6;
 }
 
+/* Responsiveness of Projects*/
+@media (max-width: 768px) {
+  
+  .project-image {
+    display: none; /* Completely hides the project-image container */
+  }
+
+  .projects-section {
+    padding: 20px 15px;
+  }
+
+  .project-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px; /* Space between project items */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+  }
+
+  .project-title {
+    margin-top: 10px; /* Space between image and title */
+    padding: 5px 0;
+    font-size: 18px;
+    text-align: center;
+    color: var(--vegas-gold);
+    background-color: transparent; /* Ensure background is transparent */
+  }
+
+  .project-category{
+    font-size: 18px;
+    /* color: var(--vegas-gold); */
+    text-align: center;
+    background-color: transparent;
+  }
+
+  .project-description,
+  .project-technologies {
+    display: none;
+  }
+}
+
 /*-----------------------------------*\
   #BLOG
 \*-----------------------------------*/

@@ -221,3 +221,29 @@ document.querySelector(".email-overlay").addEventListener("click", function () {
   document.querySelector(".email-modal-container").classList.remove("active");
   document.querySelector(".email-overlay").classList.remove("active");
 });
+
+// Image Responsiveness (Remove Container on Mobile)
+
+// Function to move the image out of the figure container and remove the figure
+function removeProjectImageContainer() {
+  if (window.innerWidth < 768) {
+    const projectImgs = document.querySelectorAll(".project-img");
+
+    projectImgs.forEach((figure) => {
+      // Move the img out of the figure element
+      const img = figure.querySelector("img");
+      if (img) {
+        figure.parentNode.insertBefore(img, figure);
+      }
+
+      // Remove the figure element
+      figure.parentNode.removeChild(figure);
+    });
+  }
+}
+
+// Run the function on initial load and on resize
+removeProjectImageContainer();
+
+// Run the function on window resize
+window.addEventListener("resize", removeProjectImageContainer);
