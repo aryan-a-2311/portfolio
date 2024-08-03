@@ -1,12 +1,5 @@
 Aryan Agarwal - Personal Portfolio
 
-- Responsiveness
-    - Clear Button on Contact form
-    - View Resume Icon Responsiveness
-    - Responsiveness on 
-
-- Add Content to Project Modals
-
 - Add content to Testimonials 
 
 - Testimonials 

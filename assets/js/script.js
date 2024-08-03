@@ -101,43 +101,41 @@ const projectTechnologies = projectModal.querySelector(
   "#project-modal-technologies p"
 );
 
-// New Ones
-
 const projectsData = [
   {
-    id: "project1", // Unique identifier for the project
+    id: "project1",
     title: "Web Application for ABR AI",
     description:
-      "A project focusing on artificial intelligence algorithms to enhance data analysis.",
-    technologies: "Python, TensorFlow, AI Algorithms",
+      "Led the transformation of a desktop application into a dynamic web application, significantly enhancing user accessibility. Redesigned the UI/UX, resulting in a 30% increase in user engagement, and spearheaded the integration of web technologies, reducing operational costs by 20%.",
+    technologies: "ReactJS, Git, Taiga.io, Web Technologies",
   },
   {
     id: "project2",
     title: "Decoding Market Trends using Data Science",
     description:
-      "A data analysis project that decodes trends in the smartphone market using big data techniques.",
-    technologies: "Python, Pandas, Big Data, Data Visualization",
+      "Implemented K-Means clustering to analyze extensive datasets and identify consumer patterns in the smartphone market. The project provided valuable insights into market segmentation and trend analysis, aiding strategic decision-making.",
+    technologies: "Python, Sci-Kit Learn, Data Visualization, Git",
   },
   {
     id: "project3",
     title: "Employee Management Application for Cognisun",
     description:
-      "A data analysis project that decodes trends in the smartphone market using big data techniques.",
-    technologies: "Python, Pandas, Big Data, Data Visualization",
+      "Designed and developed a mobile application using Flutter and Django to streamline internal employee management processes. The application facilitated efficient data handling and improved communication within the organization, significantly enhancing operational efficiency.",
+    technologies: "Python, Django, Flutter, MySQL, Git, Full-Stack Development",
   },
   {
     id: "project4",
     title: "Development of a Programming Language - Citrus",
     description:
-      "A data analysis project that decodes trends in the smartphone market using big data techniques.",
-    technologies: "Python, Pandas, Big Data, Data Visualization",
+      "Led a team of 5 to develop 'Citrus,' a new programming language using Prolog and Python. Designed grammar rules, implemented the parser/evaluator, and created comprehensive test cases, resulting in a functional and reliable programming language.",
+    technologies: "Prolog, Python, Git",
   },
   {
     id: "project5",
     title: "Semantic Web Based Apartment Hunting Platform",
     description:
-      "A data analysis project that decodes trends in the smartphone market using big data techniques.",
-    technologies: "Python, Pandas, Big Data, Data Visualization",
+      "Developed a semantic web application to streamline apartment hunting for ASU students. Utilized OWL, Python, and semantic web practices to integrate complex datasets, offering advanced search and filtering capabilities for an enhanced user experience.",
+    technologies: "OWL, Python, Semantic Web Practices",
   },
 ];
 
@@ -162,9 +160,9 @@ for (let i = 0; i < projectCards.length; i++) {
 
 // Function to show the project modal with specific content
 function showProjectModal(title, description, technologies) {
-  projectTitle.textContent = title;
-  projectDescription.textContent = description;
-  projectTechnologies.textContent = technologies;
+  projectTitle.innerHTML = title;
+  projectDescription.innerHTML = description;
+  projectTechnologies.innerHTML = technologies;
 
   // Display the modal
   projectModal.classList.add("active");
@@ -180,8 +178,6 @@ projectOverlay.addEventListener("click", () => {
   projectModal.classList.remove("active");
   projectOverlay.classList.remove("active");
 });
-
-// New Ones
 
 // Function to clear the form fields
 function clearForm() {

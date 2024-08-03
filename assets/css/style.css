@@ -1105,19 +1105,27 @@ main {
 }
 
 .project-modal-content {
-  background: var(--eerie-black-2);
-  position: relative;
   padding: 20px;
+  position: relative;
+  background: var(--eerie-black-2);
   border: 1px solid var(--jet);
   border-radius: 14px;
   box-shadow: var(--shadow-5);
-  max-width: 550px;
-  width: 90%; 
   opacity: 0;
   transform: scale(1.1);
   transition: opacity 0.3s ease, transform 0.3s ease;
   z-index: 1001;
-  margin: 0 10px;
+  max-width: 90%; /* Make modal width responsive */
+  width: 100%;
+  margin: 0 auto; /* Center the modal */
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .project-modal-content {
+    max-width: 600px; /* Limit width on larger screens */
+    padding: 40px 20px 20px; /* More padding at the top for larger screens */
+  }
 }
 
 .project-modal-container.active .project-modal-content {
@@ -1127,8 +1135,8 @@ main {
 
 .project-modal-close-btn {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 10px;
+  right: 10px;
   background: var(--onyx);
   border-radius: 8px;
   width: 32px;
@@ -1139,11 +1147,13 @@ main {
   color: var(--white-2);
   font-size: 18px;
   opacity: 0.7;
-  cursor: pointer;
+  z-index: 1100;
 }
 
 .project-modal-close-btn:hover,
-.project-modal-close-btn:focus { opacity: 1; }
+.project-modal-close-btn:focus {
+  opacity: 1;
+}
 
 .project-modal-avatar-box {
   background: var(--bg-gradient-onyx);
@@ -1156,7 +1166,9 @@ main {
 .project-modal-img-wrapper > img { display: none; }
 
 .project-modal-title {
-  margin-bottom: 15px;
+  margin-right: 40px; /* Space for the close button */
+  margin-bottom: 10px;
+  font-size: 1.5em;
 }
 
 .project-modal-details time {
