@@ -329,11 +329,11 @@ article.active {
 
 @media (max-width: 768px) {
   .splash-name {
-    font-size: 2em; /* Reduce font size for smaller screens */
+    font-size: 1.8em; /* Reduce font size for smaller screens */
   }
   
   .splash-tagline {
-    font-size: 1.5em; /* Adjust tagline font size */
+    font-size: 1.0em; /* Adjust tagline font size */
   }
   
   .splash-logo {
@@ -344,11 +344,11 @@ article.active {
 
 @media (max-width: 480px) {
   .splash-name {
-    font-size: 2em; /* Further reduce font size for very small screens */
+    font-size: 1.8em; /* Further reduce font size for very small screens */
   }
   
   .splash-tagline {
-    font-size: 1.5em; /* Adjust tagline font size */
+    font-size: 1.1em; /* Adjust tagline font size */
   }
   
   .splash-logo {
