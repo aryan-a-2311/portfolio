@@ -1,7 +1,5 @@
 Aryan Agarwal - Personal Portfolio
 
-- Add content to Testimonials 
-
 - Testimonials 
     - Company Name, Position
     - Link to LinkedIn
