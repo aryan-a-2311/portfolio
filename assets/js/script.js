@@ -260,7 +260,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Development: Hide splash screen after a set time
-  setTimeout(hideSplashScreen, 3000);
+  setTimeout(hideSplashScreen, 10000);
 
   // Production: Hide splash screen after window load
   // window.addEventListener("load", hideSplashScreen);

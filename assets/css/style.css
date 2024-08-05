@@ -324,6 +324,40 @@ article.active {
 }
 
 #main-content {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .splash-name {
+    font-size: 2em; /* Reduce font size for smaller screens */
+  }
+  
+  .splash-tagline {
+    font-size: 1.5em; /* Adjust tagline font size */
+  }
+  
+  .splash-logo {
+    width: 30%; /* Adjust logo size */
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .splash-name {
+    font-size: 2em; /* Further reduce font size for very small screens */
+  }
+  
+  .splash-tagline {
+    font-size: 1.5em; /* Adjust tagline font size */
+  }
+  
+  .splash-logo {
+    width: 40%; /* Adjust logo size */
+    max-width: 100px;
+  }
+}
+
+#main-content {
   display: none; /* Ensure main content is hidden initially */
 }
 
