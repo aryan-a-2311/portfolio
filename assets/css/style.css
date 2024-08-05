@@ -271,6 +271,95 @@ article.active {
   z-index: -1;
 }
 
+/*-----------------------------------*\
+  #SPLASH SCREEN
+\*-----------------------------------*/
+
+#splash-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black-background); /* Consistent background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  overflow: hidden;
+  animation: pulse 2s infinite; /* Pulsing animation */
+}
+
+/* Main content hidden state */
+.hidden {
+  display: none;
+}
+
+.splash-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centering the content */
+}
+
+.splash-logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.splash-name {
+  color: var(--vegas-gold);
+  font-size: 2.5em;
+  font-family: 'YourFontFamily', sans-serif; /* Replace 'YourFontFamily' with the actual font used on your website */
+  margin: 0;
+}
+
+.splash-tagline {
+  color: #fffff0; /* Soft ivory color */
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif; /* Ensure consistent font */
+  font-weight: 300;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  opacity: 0.9;
+}
+
+#main-content {
+  display: none; /* Ensure main content is hidden initially */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Animation */
+
+/* Zoom-In Bounce Animation */
+/* @keyframes zoomInBounce {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  80% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+} */
+
+/* Pulse Animation */
 
 /*-----------------------------------*\
   #MAIN

@@ -7,5 +7,3 @@ Aryan Agarwal - Personal Portfolio
 - Carousel?
 
 - About Me Page?
-
-- Splash Screen?

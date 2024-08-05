@@ -243,3 +243,25 @@ removeProjectImageContainer();
 
 // Run the function on window resize
 window.addEventListener("resize", removeProjectImageContainer);
+
+// Splash Screes JS
+
+document.addEventListener("DOMContentLoaded", function () {
+  const splashScreen = document.getElementById("splash-screen");
+  const mainContent = document.querySelector("main");
+
+  // Ensure main content is hidden initially
+  mainContent.classList.add("hidden");
+
+  // Function to hide splash screen and show main content
+  function hideSplashScreen() {
+    splashScreen.style.display = "none";
+    mainContent.classList.remove("hidden");
+  }
+
+  // Development: Hide splash screen after a set time
+  setTimeout(hideSplashScreen, 3000);
+
+  // Production: Hide splash screen after window load
+  // window.addEventListener("load", hideSplashScreen);
+});
