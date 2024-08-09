@@ -1,8 +1,6 @@
 Aryan Agarwal - Personal Portfolio
 
-- Testimonials 
-    - Company Name, Position
-    - Link to LinkedIn
+- Scrollbar color to vegas gold
 
 - Carousel?
 

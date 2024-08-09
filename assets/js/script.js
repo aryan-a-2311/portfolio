@@ -20,10 +20,12 @@ const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
 
-// modal variable
+// modal variables
 const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
+const modalLinkedIn = document.querySelector("[data-modal-linkedin]");
+const modalByline = document.querySelector("[data-modal-byline]");
 
 // modal toggle function
 const testimonialsModalFunc = function () {
@@ -41,6 +43,12 @@ for (let i = 0; i < testimonialsItem.length; i++) {
     ).innerHTML;
     modalText.innerHTML = this.querySelector(
       "[data-testimonials-text]"
+    ).innerHTML;
+    modalLinkedIn.href = this.querySelector(
+      "[data-testimonials-linkedin]"
+    ).href;
+    modalByline.innerHTML = this.querySelector(
+      "[data-testimonials-byline]"
     ).innerHTML;
 
     testimonialsModalFunc();
@@ -260,7 +268,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Development: Hide splash screen after a set time
-  // setTimeout(hideSplashScreen, 10000);
+  // setTimeout(hideSplashScreen, 3000);
 
   // Production: Hide splash screen after window load
   window.addEventListener("load", hideSplashScreen);

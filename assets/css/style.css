@@ -877,6 +877,29 @@ main {
   line-height: 1.6;
 }
 
+.modal-header {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between the name and the icon */
+}
+
+.linkedin-link {
+  display: flex;
+  align-items: center;
+}
+
+.linkedin-icon {
+  font-size: 1.1em;
+  padding-left: 0.2em;
+  padding-bottom: 0.2em;
+  color: var(--light-gray);
+  transition: color 0.3s ease;
+}
+
+.linkedin-icon:hover {
+  color: var(--vegas-gold);
+}
+
 
 /**
  * #clients 
