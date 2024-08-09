@@ -1,10 +1,5 @@
 Aryan Agarwal - Personal Portfolio
 
-- Direct Mail like Biggi Website
-    - Contact Form
-
-- Scrollbar color to vegas gold
-
 - Carousel?
 
 - About Me Page?

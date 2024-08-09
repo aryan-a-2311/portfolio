@@ -1341,6 +1341,7 @@ main {
   color: var(--orange-yellow-crayola);
   font-size: var(--fs-4);
   margin-bottom: 5px;
+  padding-top: 10px;
 }
 
 #project-modal-description p, #project-modal-technologies p {
