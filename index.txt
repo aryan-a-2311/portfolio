@@ -1,5 +1,9 @@
 Aryan Agarwal - Personal Portfolio
 
+- Arrow Key instead of Scrollbar in Testimonial
+
+- Testimonial Hover Animation
+
 - Carousel?
 
 - About Me Page?

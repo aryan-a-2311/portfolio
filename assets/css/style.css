@@ -1935,6 +1935,15 @@ textarea.form-input::-webkit-resizer { display: none; }
     -webkit-line-clamp: 2;
   }
 
+  .testimonials-item .content-card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .testimonials-item .content-card:hover {
+    /* transform: translateY(-1px); */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.518); /* Add a more pronounced shadow */
+  }
+
   /* testimonials modal */
 
   .modal-container { padding: 20px; }
