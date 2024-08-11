@@ -236,7 +236,7 @@ article.active {
 
 .has-scrollbar::-webkit-scrollbar {
   width: 5px;
-  height: 5px;
+  height: 7px;
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
